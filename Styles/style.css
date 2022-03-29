@@ -2,3 +2,78 @@
     margin: 0;
     padding: 0;
 }
+
+body {
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#container {
+    height: 80vh;
+    width: 80vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(10px, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(10px, 1fr));
+    gap: 1px;
+    margin: 1em;
+}
+
+.cell {
+    background: red;
+}
+
+#reset {
+    text-transform: uppercase;
+    border: solid black 2px;
+    background: white;
+    padding: 1em;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Kiwi Maru';
+    font-weight: 500;
+    transition: transform 200ms;
+}
+
+#reset:hover {
+    transform:scale(1.2);
+    border-style: dashed;
+}
+
+#red {
+    height: 40px;
+    width: 40px;
+    background: red;
+    border-radius: 50%;
+    transition: transform 200ms;
+    cursor: pointer;
+}
+
+#red:hover {
+    transform: scale(1.2);
+}
+
+
+#black {
+    height: 40px;
+    width: 40px;
+    background: black;
+    border-radius: 50%;
+    transition: transform 200ms;
+    cursor: pointer;
+}
+
+#black:hover {
+    transform: scale(1.2);
+}
+
+#controls {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80vw;
+    margin: 1em;
+}
